@@ -1,0 +1,81 @@
+.center{
+  text-align: center;
+}
+
+@media (min-width: 550px){
+  h1.title::before{
+    content: "Welcome to my portfolio!";
+  }
+}
+
+@media (max-width: 549px){
+  h1.title::before{
+    content: "Welcome!";
+  }
+}
+
+.navbar{
+  border-radius: 5px;
+}
+
+.main-nav a{
+  width: 18%;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+.logo{
+  height: 300px;
+}
+
+.main-container{
+  min-height: 100vh;
+}
+
+%button{
+  border-radius:4px;
+  text-decoration:none;
+  color:white;
+  padding-bottom: 3px;
+
+}
+
+.body {
+  padding: 60px 15px;
+}
+
+#contact {
+  @extend %button;
+  background-color:#0b7cbd;
+}
+
+#translation {
+  @extend %button;
+  background-color:#0b7cbd;
+}
+
+#mywebsite {
+  @extend %button;
+  background-color: green;
+  font-size: 17px;
+}
+
+body{.logos{
+  justify:center;
+  height: 120px;
+  width: 100px;}
+  p {
+    text-align: center;
+  }
+}
+
+
+
+
+th, td{
+  font-size: 20px;
+  padding: 20px;
+  border: 1px solid black;
+}
